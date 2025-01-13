@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .slide {
   overflow-y: hidden !important;
   transition: height 0.5s ease-in !important;
@@ -8,6 +10,9 @@
   justify-content: flex-end;
   padding: 1em 0;
   list-style: none;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .nav ul li {
@@ -16,7 +21,7 @@
 
 .nav a,
 .nav-toggle {
-  color: #333;
+  color: $font-family-body;
 }
 
 .nav-toggle {
@@ -31,12 +36,16 @@
   .nav ul {
     flex-direction: column;
     padding-bottom: 1em;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .nav ul li {
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 100%;
   }
 
   .nav ul li a {
@@ -44,10 +53,11 @@
     padding: 0.5em 0;
   }
 
-  .js .nav-toggle {
+  .js
+  .nav-toggle {
     display: block;
     float: right;
-    width: 2em;
+    width: 1em;
     margin: 0.6667em 0;
     font-size: 1.5rem;
     line-height: 2em;

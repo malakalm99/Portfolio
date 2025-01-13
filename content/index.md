@@ -1,9 +1,9 @@
 ---
-Title: Home
+Title: Portfolio
 Description: This is our index page.
 ---
 
-Home page
+Malaks Portfolio
 ==========================
 
 Välkommen!

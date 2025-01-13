@@ -1,6 +1,7 @@
 ---
 Title: Report
 Description: My report page for design course.
+hidden: True
 ---
 
 Report

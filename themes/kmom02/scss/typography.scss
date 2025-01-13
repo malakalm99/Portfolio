@@ -1,13 +1,29 @@
+@use 'variables' as *;
+
 body {
   line-height: 1.4;
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-family: $font-family-body;
+  color: $main-font-color;
 }
 
-.header {
+.header
+.footer {
   line-height: 1.4;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: $fontf-header-foot;
   font-style: italic;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5em;
 }
 
 h1,
@@ -23,3 +39,22 @@ h6 {
   font-size: 1rem;
 }
 
+p {
+  font-size: 1.25em;
+  margin-bottom: $magicnum;
+}
+
+li {
+  font-size: 1.25em;
+}
+
+@media (max-width: 920px) {
+  h1 {
+    font-size: 2em;
+    margin-bottom: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.3em;
+  }
+}

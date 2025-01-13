@@ -1,17 +1,17 @@
+@use 'variables' as *;
+
 .logo img {
   max-width: 100px;
   border-radius: 50px;
   padding-top: 1em;
   padding-right: 1em;
   height: auto;
+  filter: $img-filter;
 }
 
 .me {
   padding-top: 10px;
   max-width: 10%;
   border-radius: 10px;
-}
-
-img {
-  max-width: 100%;
+  filter: $img-filter;
 }

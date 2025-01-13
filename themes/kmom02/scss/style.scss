@@ -1,3 +1,21 @@
+@use 'variables' as *;
+
+@use 'typography';
+
+@use 'container';
+@use 'header';
+@use 'footer';
+@use 'img';
+
+@use 'blockquotes';
+@use 'code';
+
+@use 'technology';
+
+@use 'analysispage';
+
+@use 'gallery';
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -8,14 +26,3 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/regular';
 
 @import '../../node_modules/normalize.css/normalize';
-@import 'variables';
-
-@import 'typography';
-
-@import 'container';
-@import 'header';
-@import 'footer';
-@import 'img';
-
-@import 'blockquotes';
-@import 'code';

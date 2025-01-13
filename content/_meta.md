@@ -11,4 +11,11 @@ Social:
     - title: Link to course book.
       url: https://learning.oreilly.com/library/view/the-principles-of/9781098124717/Text/design4-ch1.html#implementation
       icon: fas fa-book
+    - title: Dark Mode
+      url: ?action=theme
+      icon: fas fa-moon
+    - title: Destroy Session
+      url: ?action=session_destroy
+      icon: fas fa-trash-alt
+---
 ---

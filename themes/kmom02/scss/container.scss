@@ -1,3 +1,9 @@
+@use 'variables' as *;
+
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
@@ -6,12 +12,18 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  margin: 0;
   background-color: $background-body-color;
-  color: $font-color;
+  color: $main-font-color;
+  overflow-x: hidden;
 }
 
-.main {
-  flex: 1 0 auto;
+.main,
+.header,
+.footer {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .header,
@@ -19,9 +31,50 @@ body {
   flex: 0 0 auto;
 }
 
+.title {
+  color: $font-header-color;
+}
+
+a {
+  color: $font-header-color;
+}
+
 .main {
-  width: 100%;
+  flex: 1 0 auto;
   max-width: 64rem;
   padding: 2rem;
   margin: 0 auto;
+  background-color: $main-background-color;
+}
+
+.kalkyl {
+  border-width: 1px;
+  height: 510px;
+  width: 650px;
+}
+
+.h1 {
+  color: $font-color-h1;
+  align-items: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .main {
+    padding: 1rem;
+  }
+
+  .header,
+  .footer {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .kalkyl {
+    height: 300px;
+    width: 300px;
+  }
 }
