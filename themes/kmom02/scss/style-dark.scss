@@ -1,0 +1,49 @@
+@use 'variables' as * with (
+  $main-background-color: #302d4b,
+  $main-font-color: #cbe0ec,
+  $background-body-color: #040028,
+  $background-header-color: #221F3C,
+  $background-footer-color: #0c0835,
+  $font-alt-color: #b7afaf,
+  $border-color: #aaa5a5,
+  $border-alt-color: #000000,
+  $footer-font-color: rgb(218, 201, 201),
+  $font-header-color: #f0e8e8,
+  $font-color-h1: #b3ddf0,
+  $box-color: rgb(79, 85, 160),
+  $link-color: #959bc1,
+  $img-filter: grayscale(50%),
+  $font-family-body: 'Parkinsans',
+  $fontf-header-foot: 'Oswald',
+  $hover-color: rgba(206, 178, 178, 0.2),
+
+);
+
+@use 'typography';
+
+@use 'container';
+@use 'header';
+@use 'footer';
+@use 'img';
+
+@use 'blockquotes';
+@use 'code';
+
+@use 'technology';
+
+@use 'analysispage';
+
+@use 'gallery';
+
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import '../../node_modules/normalize.css/normalize';
+
+
