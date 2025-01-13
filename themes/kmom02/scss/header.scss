@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $background-header-color;
+}
+
+.site-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  border-bottom: 1px solid $border-color;
+}
+
+.nav a {
+  font-size: 2rem;
+}

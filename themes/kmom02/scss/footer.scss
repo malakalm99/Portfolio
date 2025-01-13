@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding: 1em 2em;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $background-footer-color;
+  color: $light-color;
+}
+
+.social 
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: $light-color;
+}
