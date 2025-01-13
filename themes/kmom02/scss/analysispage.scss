@@ -1,0 +1,66 @@
+@use 'variables' as *;
+
+.analysis-page {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    'title'
+    'kmom04'
+    'kmom05' 
+    'kmom06';
+  gap: $magicnum;
+  margin-bottom: 5px;
+}
+
+.analysispage h1 {
+  grid-area: title;
+  justify-self: center;
+}
+
+.report a {
+  color: $link-color;
+}
+
+.report {
+  border: 1px solid rgb(195, 193, 193);
+  padding: 15px;
+  background-color: $box-color;
+  align-content: center;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+.report.colors {
+  grid-area: kmom04;
+}
+
+.report.load {
+  grid-area: kmom05;
+}
+
+.report.design {
+  grid-area: kmom06;
+}
+
+.report:hover {
+  box-shadow: 5px 5px 3px 0 $hover-color;
+}
+
+@media screen and (max-width: 767px) {
+  .analysispage {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1px;
+    grid-template-areas:
+      'title'
+      'kmom04'
+      'kmom05'
+      'kmom06';
+  }
+
+  .report {
+    margin: 10px 0;
+  }
+}
